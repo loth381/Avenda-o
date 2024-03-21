@@ -4,9 +4,10 @@ import Card from "react-bootstrap/Card";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
+import { DiMongodb } from "react-icons/di";
 import { FaCss3Alt, FaJava, FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiNextdotjs, SiSupabase, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
+import { SiAstro, SiNextdotjs, SiSupabase, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
 
 function ProjectCards(props) {
   return (
@@ -50,7 +51,7 @@ function ProjectCards(props) {
               href={props.demoLink}
               target="_blank"
               style={{ marginLeft: "10px" }}
-            >       
+            >
               <FaReact /> &nbsp;
             </div>
           )}
@@ -65,6 +66,18 @@ function ProjectCards(props) {
               <IoLogoJavascript /> &nbsp;
             </div>
           )}
+
+          {!props.isBlog && props.astro && (
+            <div
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <SiAstro /> &nbsp;
+            </div>
+          )}
+
           {!props.isBlog && props.typescript && (
             <div
               variant="primary"
@@ -84,6 +97,17 @@ function ProjectCards(props) {
               style={{ marginLeft: "10px" }}
             >
               <SiSupabase /> &nbsp;
+            </div>
+          )}
+          
+          {!props.isBlog && props.mongo && (
+            <div
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <DiMongodb /> &nbsp;
             </div>
           )}
           
