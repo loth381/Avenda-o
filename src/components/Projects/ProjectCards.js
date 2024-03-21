@@ -4,8 +4,9 @@ import Card from "react-bootstrap/Card";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
-import { FaJava, FaReact } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiVercel } from "react-icons/si";
+import { FaCss3Alt, FaJava, FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiNextdotjs, SiSupabase, SiTailwindcss, SiTypescript, SiVercel } from "react-icons/si";
 
 function ProjectCards(props) {
   return (
@@ -32,6 +33,17 @@ function ProjectCards(props) {
             </div>
           )}
 
+          {!props.isBlog && props.css && (
+            <div
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <FaCss3Alt /> &nbsp;
+            </div>
+          )}
+
           {!props.isBlog && props.react && (
             <div
               variant="primary"
@@ -43,7 +55,38 @@ function ProjectCards(props) {
             </div>
           )}
 
+          {!props.isBlog && props.javascript && (
+            <div
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <IoLogoJavascript /> &nbsp;
+            </div>
+          )}
+          {!props.isBlog && props.typescript && (
+            <div
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <SiTypescript /> &nbsp;
+            </div>
+          )}
 
+          {!props.isBlog && props.supabase && (
+            <div
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <SiSupabase /> &nbsp;
+            </div>
+          )}
+          
 
           {!props.isBlog && props.nextjs && (
             <div
@@ -80,16 +123,7 @@ function ProjectCards(props) {
           )}
         </div>
 
-        
-
-
-        <Card.Title
-          style={{ fontSize: "14px", color: "#659AD2", display: "flex" }}
-        >
-          {props.titlePrimary}
-        </Card.Title>
-
-
+        <br/>
 
 
 

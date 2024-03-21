@@ -1,10 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import chatify from "../../Assets/Projects/chatify.png";
-import editor from "../../Assets/Projects/codeEditor.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import leaf from "../../Assets/Projects/leaf.png";
+import lutecii from "../../Assets/Projects/lutecii.png";
 import PortafolioA from "../../Assets/Projects/portafolioA.png";
+import spotify from "../../Assets/Projects/spotify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
@@ -23,27 +23,34 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              css
+              javascript
+              supabase
+              type
+              vercel
+              typescript
               nextjs
               react
               tailwinds
-              imgPath={chatify}
+              imgPath={spotify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Clone-Spotify"
+              description="este fue un proyecto personal el cual yo queria crear un aplicativo fullstack el cual me guie para clonar el spotify o que se similar el cual tiene front como backed las tecnologias que utilice son nextjs,supabase como base datos, use varias librerias como motion, stripe, github, typescript,tailwind,,etc las funciones que tiene son suscribeciones, subir musicas, esta adaptada a cualquier ripo de pantalla "
+              ghLink="https://github.com/loth381/Spotify-clon"
+              demoLink="https://spotify-clon-lyart-iota.vercel.app"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-             react
-             nextjs
-              titlePrimary= "javascript,css,html"
+              react
+              css
+              vercel
+              titlePrimary="javascript,css,html"
               imgPath={PortafolioA}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
+              title="Portafolio"
+              description="este es mi proyecto de mi portafolio personal lo cual me guie de diferentes bootcamps y de diferentes desarrolladore ,el desarrollo de esta pagina web es mejorar como desarrollador web y poder dar a conocer a otras personas lo que se y puedo hacer como Profesional"
               ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
               demoLink="https://blogs.soumya-jit.tech/"
             />
@@ -51,12 +58,15 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-            react
-              imgPath={editor}
+              css
+              javascript
+              vercel
+              imgPath={lutecii}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              
+              title="GRUPO LUTECCI"
+              description="Pagina web del Grupo Lutecci es una pagina estatica la cual tiene la siguiente tecnologias html,css,javascript Ahora dejo dejo informacion de la empresa !GRUPO LUTECCI, Es un conglomerado de empresas exitosas que operan en diferentes mercados y con diferentes productos, están prestas a servirles con la cordialidad y calidez de nuestra gente.¡"
+              ghLink="https://github.com/loth381/Spotify-clon"
+              demoLink="https://spotify-clon-lyart-iota.vercel.app"
             />
           </Col>
 
@@ -81,7 +91,7 @@ function Projects() {
               title="Ai For Social Good"
               description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-             demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"  
+              demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
             />
           </Col>
 
