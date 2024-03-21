@@ -1,10 +1,10 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import bitsOfCode from "../../Assets/Projects/blog.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import editor from "../../Assets/Projects/codeEditor.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import leaf from "../../Assets/Projects/leaf.png";
+import PortafolioA from "../../Assets/Projects/portafolioA.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import Particle from "../Particle";
 import ProjectCard from "./ProjectCards";
@@ -23,7 +23,8 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-            react
+              nextjs
+              react
               tailwinds
               imgPath={chatify}
               isBlog={false}
@@ -36,9 +37,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-            react
+             react
+             nextjs
               titlePrimary= "javascript,css,html"
-              imgPath={bitsOfCode}
+              imgPath={PortafolioA}
               isBlog={false}
               title="Bits-0f-C0de"
               description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
@@ -60,6 +62,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              vercel
               react
               tailwinds
               imgPath={leaf}

@@ -4,8 +4,8 @@ import Card from "react-bootstrap/Card";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { FaJava, FaReact } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiVercel } from "react-icons/si";
 
 function ProjectCards(props) {
   return (
@@ -38,16 +38,61 @@ function ProjectCards(props) {
               href={props.demoLink}
               target="_blank"
               style={{ marginLeft: "10px" }}
-            >
+            >       
               <FaReact /> &nbsp;
             </div>
           )}
+
+
+
+          {!props.isBlog && props.nextjs && (
+            <div
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <SiNextdotjs /> &nbsp;
+            </div>
+          )}
+
+            {!props.isBlog && props.java && (
+            <div
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <FaJava /> &nbsp;
+            </div>
+          )}
+
+          
+            {!props.isBlog && props.vercel && (
+            <div
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              style={{ marginLeft: "10px" }}
+            >
+              <SiVercel /> &nbsp;
+            </div>
+          )}
         </div>
+
+        
+
+
         <Card.Title
           style={{ fontSize: "14px", color: "#659AD2", display: "flex" }}
         >
           {props.titlePrimary}
         </Card.Title>
+
+
+
+
+
 
         {/* github - demo   */}
         <Card.Title>{props.title}</Card.Title>

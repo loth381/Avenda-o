@@ -11,7 +11,7 @@ import {
 } from "react-icons/ai";
 import { CgGitFork } from "react-icons/cg";
 import { Link } from "react-router-dom";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logoavr.svg";
 
 import { CgFileDocument } from "react-icons/cg";
 
@@ -38,7 +38,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img style={{color:"white"}}  src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

@@ -1,13 +1,9 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import { Col, Container, Row } from "react-bootstrap";
+import { FaFacebook, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { MdOutgoingMail } from "react-icons/md";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import myImg from "../../Assets/avatar.svg";
 
 function Home2() {
   return (
@@ -16,39 +12,36 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              ME <span className="purple"> PRESENTO  </span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            ¡Hola! Me llamo Henri  y me apasiona la Tecnologia como la  programación. Me he enamorado de las tecnologías y productos web, así como de explorar el  mundo de la tecnología
               <br />
-              <br />I am fluent in classics like
+              <br />Con habilidades en lenguajes como
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> C#,javascript, java,typescript,etc  </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+              Me especializo en ser un ingeniero de sistemas y software con un enfoque particular en el&nbsp;
+                <i>
+                  <b className="purple">Desarrollo web y software, así como en la gestión de proyectos relacionados con la tecnología</b>Mi pasión radica en explorar las últimas tecnologías y aplicarlas de manera efectiva para crear soluciones innovadoras y escalables{" "}
                 <b className="purple">
-                  Blockchain.
+                  
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              Cuando tengo la oportunidad, también aplico mi pasión por desarrollar productos utilizando
+              <b className="purple"> Node.js , ASP.NET</b>  y
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  las modernas bibliotecas y frameworks de 
                 </b>
               </i>
-              &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple">  JavaScript, como React.js, Entityframework,Spring boot y Next.js.</b>
               </i>
             </p>
           </Col>
@@ -60,34 +53,45 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>Encuéntrame en</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+            No dudes en <span className="purple">conectarte  </span>conmigo
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://wa.me/51930134408"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiFillGithub />
+                  <FaWhatsapp />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://www.facebook.com/henri76300424?locale=es_LA"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <FaFacebook />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://github.com/loth381"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaGithub />
+                </a>
+              </li>
+
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/henri-de-la-cruz-avendaño-855043228/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,12 +101,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://mail.google.com/mail/u/0/#inbox"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <MdOutgoingMail />
                 </a>
               </li>
             </ul>
