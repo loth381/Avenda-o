@@ -1,6 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { useEffect, useState } from "react";
-import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import {
+  Navigate,
+  Route,
+  BrowserRouter as Router,
+  Routes
+} from "react-router-dom";
 import Preloader from "../src/components/Pre";
 import "./App.css";
 import About from "./components/About/About";
@@ -16,21 +21,6 @@ function App() {
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
-    // Definimos dataLayer
-    window.dataLayer = window.dataLayer || [];
-
-    // Función para inicializar Google Analytics
-    function initializeAnalytics() {
-      function gtag(){window.dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-WJL8KV59WT'); // Reemplaza 'TU_ID_DE_SEGUIMIENTO' con tu ID de seguimiento de Google Analytics
-    }
-
-    // Llama a la función para inicializar Google Analytics
-    initializeAnalytics();
-
-    // Simula un tiempo de carga antes de mostrar el contenido
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
