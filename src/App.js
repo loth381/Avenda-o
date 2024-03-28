@@ -1,26 +1,36 @@
-import React, { useState, useEffect } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useEffect, useState } from "react";
+import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Preloader from "../src/components/Pre";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
+import "./App.css";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
+import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar";
+import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/ResumeNew";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
 
   useEffect(() => {
+    // Definimos dataLayer
+    window.dataLayer = window.dataLayer || [];
+
+    // Función para inicializar Google Analytics
+    function initializeAnalytics() {
+      function gtag(){window.dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-WJL8KV59WT'); // Reemplaza 'TU_ID_DE_SEGUIMIENTO' con tu ID de seguimiento de Google Analytics
+    }
+
+    // Llama a la función para inicializar Google Analytics
+    initializeAnalytics();
+
+    // Simula un tiempo de carga antes de mostrar el contenido
     const timer = setTimeout(() => {
       upadateLoad(false);
     }, 1200);
