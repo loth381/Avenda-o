@@ -1,9 +1,11 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ecommerce from "../../Assets/Projects/ecommerce+.png";
+import eventos from "../../Assets/Projects/evento.webp";
 import velada from "../../Assets/Projects/lavelada.png";
 import lutecii from "../../Assets/Projects/lutecii.png";
 import metaverso from "../../Assets/Projects/metaverso.png";
+import operIa from "../../Assets/Projects/openIa.webp";
 import pixolono from "../../Assets/Projects/pixolino.png";
 import PortafolioA from "../../Assets/Projects/portafolioA.png";
 import spotify from "../../Assets/Projects/spotify.png";
@@ -24,6 +26,44 @@ function Projects() {
         Aquí hay algunos proyectos en los que he trabajado recientemente.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              css
+              javascript
+              mongo
+              type
+              vercel
+              typescript
+              nextjs
+              react
+              tailwinds
+              imgPath={eventos}
+              isBlog={false}
+              title="Ayacucho-Eventos"
+              description="Proyecto personal para una pagina web para mi ciudad ayacucho para mostrar todo los tipos de eventos o conciertos en ayacucho las funcionalidades de l aplicativo es encontrar los eventos que hay en peru y poder ver toda la descripcion del evento, despues poder comprar un entrado o boleto para el evento"
+              ghLink="https://github.com/loth381/Eventos-ayacucho"
+              demoLink="https://ayacucho-eventos.vercel.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              css
+              javascript
+              vercel
+              nextjs
+              react
+              tailwinds
+              imgPath={operIa}
+              isBlog={false}
+              title="Ayacucho-Eventos"
+              description="proyecto personal de buscador mediante el link para poder encontrar toda la descripicon de un link y poder ver todo lo que contiene el link"
+              ghLink="https://github.com/loth381/OpenAI"
+              demoLink="https://open-ai-bay-five.vercel.app/"
+            />
+          </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               css
