@@ -27,7 +27,7 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
-        <Col md={4} className="project-card">
+        <Col  md={4} className="project-card">
             <ProjectCard
               css
               javascript
@@ -46,7 +46,7 @@ function Projects() {
               demoLink="https://ayacucho-eventos.vercel.app/"
             />
           </Col>
-
+         
           <Col md={4} className="project-card">
             <ProjectCard
               css

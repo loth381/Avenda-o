@@ -15,7 +15,7 @@ function Home2() {
               ME <span className="purple"> PRESENTO  </span>
             </h1>
             <p className="home-about-body">
-            ¡Hola! Me llamo Henri  y me apasiona la Tecnologia como la  programación. Me he enamorado de las tecnologías y productos web, así como de explorar el  mundo de la tecnología
+            ¡Hola! Me llamo Henri  y me apasiona la Tecnologia como la  informática. Me he enamorado de las tecnologías y productos web, así como de explorar el  mundo de la tecnología
               <br />
               <br />Con habilidades en lenguajes como
               <i>

@@ -12,7 +12,7 @@ import { SiAstro, SiNextdotjs, SiSupabase, SiTailwindcss, SiTypescript, SiVercel
 function ProjectCards(props) {
   return (
     //Tecnologias
-    <Card className="project-card-view">
+    <Card  className="project-card-view">
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
         <div style={{ display: "flex" }}>

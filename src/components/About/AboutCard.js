@@ -20,7 +20,7 @@ function AboutCard() {
               <ImPointRight /> Diseño grafico
             </li>
             <li className="about-activity">
-              <ImPointRight /> Video juegos
+              <ImPointRight /> Investigar tecnologías
             </li>
             <li className="about-activity">
               <ImPointRight /> gestion de proyectos
@@ -30,7 +30,7 @@ function AboutCard() {
           <p style={{ color: "rgb(155 126 172)" }}>
           Esforzándome por desarrollar tecnología que marque la diferenci!"{" "}
           </p>
-          <footer className="blockquote-footer">Avendaño</footer>
+          <footer className="blockquote-footer"></footer>
         </blockquote>
       </Card.Body>
     </Card>
