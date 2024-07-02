@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import ecommerce from "../../Assets/Projects/ecommerce+.png";
+import esland from "../../Assets/Projects/esland.png";
 import eventos from "../../Assets/Projects/evento.webp";
 import velada from "../../Assets/Projects/lavelada.png";
 import lutecii from "../../Assets/Projects/lutecii.png";
@@ -26,6 +27,25 @@ function Projects() {
         Aquí hay algunos proyectos en los que he trabajado recientemente.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col  md={4} className="project-card">
+            <ProjectCard
+              css
+              javascript
+              type
+              vercel
+              typescript
+              react
+              astro
+              tailwinds
+              imgPath={esland}
+              isBlog={false}
+              title="Clon Esland"
+              description="Proyecto personal del aplicativo de los premios ESLAND donde se utiliza varias tipo de tecnologias  como una base datos de la tecnologia de astro "
+              ghLink="https://github.com/loth381/Clon-esland"
+              demoLink="https://esland-2024.vercel.app/"
+            />
+          </Col>
 
         <Col  md={4} className="project-card">
             <ProjectCard
@@ -57,7 +77,7 @@ function Projects() {
               tailwinds
               imgPath={operIa}
               isBlog={false}
-              title="Ayacucho-Eventos"
+              title="Open IA"
               description="proyecto personal de buscador mediante el link para poder encontrar toda la descripicon de un link y poder ver todo lo que contiene el link"
               ghLink="https://github.com/loth381/OpenAI"
               demoLink="https://open-ai-bay-five.vercel.app/"
